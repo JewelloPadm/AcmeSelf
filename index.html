@@ -2627,9 +2627,118 @@
                         }
 
                     }
-                </style>
 
-            </div>
+
+                </style>
+                </div>
+                
+
+                <ul class="site-nav">
+                    <style>
+                        .site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-lv-1.item {
+    flex: 0 0 30%; /* Allow each button to take up 30% of the row */
+    margin-bottom: 10px; /* Space between rows */
+}
+
+.menu__moblie {
+    width: 100%; /* Button takes full width of its container */
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #e38d0c; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu__moblie:hover {
+    background-color: #dee50d; /* Darker button color on hover */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .menu-lv-1.item {
+        flex: 0 0 32%; /* Each button takes 32% of the row width, 3 per row */
+    }
+}
+                    </style>
+                    <li class="menu-lv-1 item">
+                        <button class="menu__moblie" onclick="navigateToScheme();">
+                            Saving Scheme
+                        </button>
+                    </li>
+                    <li class="menu-lv-1 item">
+                        <button class="menu__moblie" onclick="navigateToBankDetails();">
+                            Bank Details
+                        </button>
+                    </li>
+                    <li class="menu-lv-1 item">
+                        <button class="menu__moblie" onclick="navigateToKyc();">
+                            Kyc
+                        </button>
+                    </li>
+                    <li class="menu-lv-1 item">
+                        <button class="menu__moblie" onclick="navigateToRate();">
+                            Rate
+                        </button>
+                    </li>
+                    <li class="menu-lv-1 item">
+                        <button class="menu__moblie" onclick="navigateSchemeRecords();">
+                            Scheme Records
+                        </button>
+                    </li>
+                    <li class="menu-lv-1 item">
+                        <button class="menu__moblie" onclick="navigateToCustomerCard();">
+                            Customer Card
+                        </button>
+                    </li>
+                    <li class="menu-lv-1 item">
+                        <button class="menu__moblie" onclick="navigateTransactionHistory();">
+                            Transaction History
+                        </button>
+                    </li>
+                    <li class="menu-lv-1 item">
+                        <button class="menu__moblie" onclick="navigateToMyOrder();">
+                            My Order
+                        </button>
+                    </li>
+                    <li class="menu-lv-1 item">
+                        <button class="menu__moblie" onclick="navigateToUserProfile();">
+                            User Profile
+                        </button>
+                    </li>
+                    <li class="menu-lv-1 item">
+                        <button class="menu__moblie" onclick="navigateToDigitalGold();">
+                            Digital Gold
+                        </button>
+                    </li>
+                    <li class="menu-lv-1 item">
+                        <button class="menu__moblie" onclick="navigateToPanchang();">
+                            Panchang
+                        </button>
+                    </li>
+                    <li class="menu-lv-1 item">
+                        <button class="menu__moblie" onclick="navigateToFeedback();">
+                            Feedback
+                        </button>
+                    </li>
+                    <li class="menu-lv-1 item">
+                        <button class="menu__moblie" onclick="navigateToSetting();">
+                            Setting
+                        </button>
+                    </li>
+                </ul>
+                
+
             <div id="shopify-section-b72e7326-2c7e-43e8-99c3-4455ec77fee5"
                 class="shopify-section home-slideshow-sections">
                 <section class="home-slideshow hasvideo" id="slideshow-b72e7326-2c7e-43e8-99c3-4455ec77fee5">
