@@ -2633,9 +2633,12 @@
                 </div>
                 
 
-                <ul class="site-nav">
+             
+                   
+                  <ul class="custom-nav">
                     <style>
-                        .site-nav {
+                        /* Container for the navigation list */
+.custom-nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -2643,100 +2646,106 @@
     list-style: none;
 }
 
-.menu-lv-1.item {
-    flex: 0 0 30%; /* Allow each button to take up 30% of the row */
+/* Styling for each list item containing the buttons */
+.custom-item {
+    flex: 0 0 30%; /* Buttons take up 30% width of the row */
     margin-bottom: 10px; /* Space between rows */
 }
 
-.menu__moblie {
+/* Styling for the button itself */
+.custom-button {
     width: 100%; /* Button takes full width of its container */
-    padding: 10px;
-    font-size: 14px;
+    padding: 12px;
+    font-size: 16px;
     text-align: center;
-    background-color: #e38d0c; /* Button color */
+    background-color: #28a745; /* Green button color */
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
-.menu__moblie:hover {
-    background-color: #dee50d; /* Darker button color on hover */
+/* Hover effect for buttons */
+.custom-button:hover {
+    background-color: #b8c01c; /* Darker green color on hover */
 }
 
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
-    .menu-lv-1.item {
-        flex: 0 0 32%; /* Each button takes 32% of the row width, 3 per row */
+    .custom-item {
+        flex: 0 0 32%; /* Each button takes 32% width on mobile */
     }
 }
+
                     </style>
-                    <li class="menu-lv-1 item">
-                        <button class="menu__moblie" onclick="navigateToScheme();">
+                    <li class="custom-item">
+                        <button class="custom-button" onclick="navigateToScheme();">
                             Saving Scheme
                         </button>
                     </li>
-                    <li class="menu-lv-1 item">
-                        <button class="menu__moblie" onclick="navigateToBankDetails();">
+                    <li class="custom-item">
+                        <button class="custom-button" onclick="navigateToBankDetails();">
                             Bank Details
                         </button>
                     </li>
-                    <li class="menu-lv-1 item">
-                        <button class="menu__moblie" onclick="navigateToKyc();">
+                    <li class="custom-item">
+                        <button class="custom-button" onclick="navigateToKyc();">
                             Kyc
                         </button>
                     </li>
-                    <li class="menu-lv-1 item">
-                        <button class="menu__moblie" onclick="navigateToRate();">
+                    <li class="custom-item">
+                        <button class="custom-button" onclick="navigateToRate();">
                             Rate
                         </button>
                     </li>
-                    <li class="menu-lv-1 item">
-                        <button class="menu__moblie" onclick="navigateSchemeRecords();">
+                    <li class="custom-item">
+                        <button class="custom-button" onclick="navigateSchemeRecords();">
                             Scheme Records
                         </button>
                     </li>
-                    <li class="menu-lv-1 item">
-                        <button class="menu__moblie" onclick="navigateToCustomerCard();">
+                    <li class="custom-item">
+                        <button class="custom-button" onclick="navigateToCustomerCard();">
                             Customer Card
                         </button>
                     </li>
-                    <li class="menu-lv-1 item">
-                        <button class="menu__moblie" onclick="navigateTransactionHistory();">
+                    <li class="custom-item">
+                        <button class="custom-button" onclick="navigateTransactionHistory();">
                             Transaction History
                         </button>
                     </li>
-                    <li class="menu-lv-1 item">
-                        <button class="menu__moblie" onclick="navigateToMyOrder();">
+                    <li class="custom-item">
+                        <button class="custom-button" onclick="navigateToMyOrder();">
                             My Order
                         </button>
                     </li>
-                    <li class="menu-lv-1 item">
-                        <button class="menu__moblie" onclick="navigateToUserProfile();">
+                    <li class="custom-item">
+                        <button class="custom-button" onclick="navigateToUserProfile();">
                             User Profile
                         </button>
                     </li>
-                    <li class="menu-lv-1 item">
-                        <button class="menu__moblie" onclick="navigateToDigitalGold();">
+                    <li class="custom-item">
+                        <button class="custom-button" onclick="navigateToDigitalGold();">
                             Digital Gold
                         </button>
                     </li>
-                    <li class="menu-lv-1 item">
-                        <button class="menu__moblie" onclick="navigateToPanchang();">
+                    <li class="custom-item">
+                        <button class="custom-button" onclick="navigateToPanchang();">
                             Panchang
                         </button>
                     </li>
-                    <li class="menu-lv-1 item">
-                        <button class="menu__moblie" onclick="navigateToFeedback();">
+                    <li class="custom-item">
+                        <button class="custom-button" onclick="navigateToFeedback();">
                             Feedback
                         </button>
                     </li>
-                    <li class="menu-lv-1 item">
-                        <button class="menu__moblie" onclick="navigateToSetting();">
+                    <li class="custom-item">
+                        <button class="custom-button" onclick="navigateToSetting();">
                             Setting
                         </button>
                     </li>
                 </ul>
+                
+        
                 
 
             <div id="shopify-section-b72e7326-2c7e-43e8-99c3-4455ec77fee5"
